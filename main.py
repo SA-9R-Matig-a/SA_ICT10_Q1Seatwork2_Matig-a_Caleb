@@ -37,7 +37,6 @@ menu_prices = { #dict
 display(restaurant_name, target="restaurant_name")
 display(f"Owner: {owner_name}", target="owner_name")
 display(f"Since {year_established}", target="year_established")
-display(f"Menu Pricelist", target="menulist")
 display(f"Is Delivery Available In Your Area?:", target="question")
 display(has_delivery, target="delivery")
 document.getElementById("operatingHours").innerText = f"Open: {open_time} - {close_time}"
