@@ -1,4 +1,4 @@
-from pyscript import document # type: ignore
+from pyscript import display, document # type: ignore
 
 restaurant_name = "Brew, Brew, Brew Your Float" #string
 
@@ -27,21 +27,28 @@ product_names = [ #list
     ]
 
 menu_prices = { #dict
-    "Espresso": "P49",
-    "Americano": "P79",
-    "Vanilla Latte": "P99",
-    "Macchiato": "P119",
-    "Matcha Latte": "P179"
+    "Espresso": 49,
+    "Americano": 79,
+    "Vanilla Latte": 99,
+    "Macchiato": 119,
+    "Matcha Latte": 179
 }
 
-document.getElementById("restaurant_name").innerText = restaurant_name
-document.getElementById("owner_name").innerText = f"Owner: {owner_name}"
-document.getElementById("year_established").innerText = f"Since: {year_established}"
+display(restaurant_name, target="restaurant_name")
+display(f"Owner: {owner_name}", target="owner_name")
+display(f"Since {year_established}", target="year_established")
+display(f"Menu Pricelist", target="menulist")
 document.getElementById("operatingHours").innerText = f"Open: {open_time} - {close_time}"
 document.getElementById("commonAllergens").innerText = f"May contain: {', '.join(common_allergens)}"
 
-rows = ""
-for item, price in menu_prices.items():
-    rows = rows + f"<tr><td>{item}</td><td>{price}</td></tr>"
-
-document.getElementById("product_names").innerHTML = rows
+# Display menu items
+display(product_names[0], target="prod1")
+display(f"₱{menu_prices['Espresso']:.2f}", target="price1")
+display(product_names[1], target="prod2")
+display(f"₱{menu_prices['Americano']:.2f}", target="price2")
+display(product_names[2], target="prod3")
+display(f"₱{menu_prices['Vanilla Latte']:.2f}", target="price3")
+display(product_names[3], target="prod4")
+display(f"₱{menu_prices['Macchiato']:.2f}", target="price4")
+display(product_names[4], target="prod5")
+display(f"₱{menu_prices['Matcha Latte']:.2f}", target="price5")
