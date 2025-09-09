@@ -1,5 +1,7 @@
 body {
-    background-color: #73aac9;
+    background-image: url("https://www.shutterstock.com/image-photo/defocused-background-cozy-urban-cafe-600nw-2576722645.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
     font-family:Lucida Console;
 }
 
@@ -53,4 +55,5 @@ table {
     color:black;
     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
 }
+
 
