@@ -42,7 +42,6 @@ display(has_delivery, target="delivery")
 document.getElementById("operatingHours").innerText = f"Open: {open_time} - {close_time}"
 document.getElementById("commonAllergens").innerText = f"May contain: {', '.join(common_allergens)}"
 
-# Display menu items
 display(product_names[0], target="prod1")
 display(f"₱{menu_prices['Espresso']:.2f}", target="price1")
 display(product_names[1], target="prod2")
