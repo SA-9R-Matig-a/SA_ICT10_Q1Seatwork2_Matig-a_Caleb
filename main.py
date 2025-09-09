@@ -23,7 +23,7 @@ product_names = [ #list
     "Americano", 
     "Vanilla Latte", 
     "Macchiato", 
-    "Matcha Latte"
+    "Matcha Latte - Best Seller!"
     ]
 
 menu_prices = { #dict
@@ -31,7 +31,7 @@ menu_prices = { #dict
     "Americano": 79,
     "Vanilla Latte": 99,
     "Macchiato": 119,
-    "Matcha Latte": 179
+    "Matcha Latte - Best Seller!": 179
 }
 
 display(restaurant_name, target="restaurant_name")
@@ -51,4 +51,4 @@ display(f"₱{menu_prices['Vanilla Latte']:.2f}", target="price3")
 display(product_names[3], target="prod4")
 display(f"₱{menu_prices['Macchiato']:.2f}", target="price4")
 display(product_names[4], target="prod5")
-display(f"₱{menu_prices['Matcha Latte']:.2f}", target="price5")
+display(f"₱{menu_prices['Matcha Latte - Best Seller!']:.2f}", target="price5")
